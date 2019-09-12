@@ -1,0 +1,37 @@
+Trivial (1 / flag)	A little something to get you started	
+Website Link:
+http://34.74.105.127/0013b67eeb/
+The only content displayed was "Welcome to level 0. Enjoy your stay"
+Looking at the source code :
+
+<html><head>
+		<style>
+			body {
+				background-image: url("background.png");
+			}
+		</style>
+	</head>
+	<body>
+		<p>Welcome to level 0.  Enjoy your stay.</p>
+	
+
+</body><div id="screen-shader" style="
+            transition: opacity 0.1s ease 0s; 
+            z-index: 2147483647;
+            margin: 0; 
+            border-radius: 0; 
+            padding: 0; 
+            background: #111111; 
+            pointer-events: none; 
+            position: fixed; 
+            top: -10%; 
+            right: -10%; 
+            width: 120%; 
+            height: 120%; 
+            opacity: 0.6000;
+            mix-blend-mode: multiply; 
+            display: none;
+        "></div></html>
+  If we open background.png in a new tab we get the flag :
+  ^FLAG^624846172165983dfa3995aa88741e707a547aa54f0b346c772e7c5ef9c6d12c$FLAG$
+  
