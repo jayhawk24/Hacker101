@@ -1,0 +1,8 @@
+When we create a page and check out its url its .../page/13
+and first two websites which are already there have indexes .../page/1 and 2
+so bruteforcing url we get that ...page/7 is forbidden
+when we edit our page ,we get this url http://...page/edit/13
+if we change this to http://...page/edit/7 we get the flag already being printed as
+
+My secret is
+^FLAG^e5252c1dd3e4f4500b4358055f8aaeb700aa531af33cb4bbe314572772c71daf$FLAG$
