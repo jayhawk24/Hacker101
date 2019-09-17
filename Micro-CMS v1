@@ -1,3 +1,5 @@
+1/4
+
 When we create a page and check out its url its .../page/13
 and first two websites which are already there have indexes .../page/1 and 2
 so bruteforcing url we get that ...page/7 is forbidden
@@ -6,3 +8,21 @@ if we change this to http://...page/edit/7 we get the flag already being printed
 
 My secret is
 ^FLAG^e5252c1dd3e4f4500b4358055f8aaeb700aa531af33cb4bbe314572772c71daf$FLAG$
+
+2/4
+
+When creating a page and editing its content if we add a colon after the url we get the flag
+http://34.74.105.127/4bcdd76a15/page/edit/1'
+^FLAG^d263d5bace4cf2a3bb4ffa301fca9cc300964093712236d0cae3b6c19e400dad$FLAG$
+
+3/4
+
+Input in edit page is vulenerable to xss so if we put <script> in title and submit
+we get the flag poped up when we come back to home...
+^FLAG^c4a0cc39372e419314e89f5069aae693706fd3b0c7e6ba053ad1c4419473ea17$FLAG$
+
+4/4
+We check that in content <script> is being escaped but '<>' is not so if we add this line "<img src='123' onclick=alert('1')>"
+and save we get an image and when clicked on it, pops up an alert and look at the source to get the flag.
+
+^FLAG^eff02f2b6c9abe4e5213e50ba5d5839ccce157cf1d9039122be1e3a0be679a71$FLAG$
